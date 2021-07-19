@@ -272,7 +272,9 @@ input[name="toggle"] {
       display: none; } }
 
 .site-nav__item--active a {
-  color: #000000; }
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10px; }
 
 .preview-content__wrap {
   display: grid;
@@ -701,9 +703,6 @@ p.questions__subtitle {
 .sidenav li:last-child {
   border-bottom: none; }
 
-.sidenav li:first-child a {
-  padding-top: 0; }
-
 .sidenav a {
   display: block;
   font-family: inherit;
@@ -738,7 +737,8 @@ p.questions__subtitle {
 
 a.sidenav__link-active {
   font-weight: 700;
-  color: #000000; }
+  color: #ffffff;
+  background-color: #000000; }
 
 .content-inner {
   position: relative; }

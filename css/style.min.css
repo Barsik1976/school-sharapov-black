@@ -78,7 +78,7 @@ input[name="toggle"] {
 
 .page-header {
   width: 100%;
-  background: url("../img/pattern-black.svg");
+  background: url("../img/pattern-black.jpg");
   background-position: 0 0;
   background-repeat: repeat-x; }
   @media (max-width: 1080px) {
@@ -117,8 +117,7 @@ input[name="toggle"] {
 
 .navigation {
   display: grid;
-  grid-template-columns: -webkit-max-content 1fr;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding-top: 33px;
   padding-left: 8.3vw;
@@ -155,7 +154,18 @@ input[name="toggle"] {
       font-size: clamp(23px, 5.5vw, 32px); } }
 
 .logo {
-  max-width: 481px; }
+  max-width: 481px;
+  height: 129px;
+  background-image: url("../img/logo-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  cursor: pointer; }
+  @media (max-width: 480px) {
+    .logo {
+      height: 110px; } }
+  @media (max-width: 380px) {
+    .logo {
+      height: 85px; } }
 
 .main-nav {
   display: grid;

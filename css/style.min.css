@@ -78,7 +78,12 @@ input[name="toggle"] {
 
 .page-header {
   width: 100%;
-  background: #000000; }
+  background: url("../img/pattern-black.svg");
+  background-position: 0 0;
+  background-repeat: repeat-x; }
+  @media (max-width: 1080px) {
+    .page-header {
+      background-repeat: repeat; } }
 
 .container {
   max-width: 1920px;

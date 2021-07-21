@@ -72,15 +72,13 @@ input[name="toggle"] {
   --basic-blue: #4ac9dc;
   --back-input: #23413f; }
 
+@media (max-width: 380px) {
+  .page__body {
+    overflow-x: hidden; } }
+
 .page-header {
   width: 100%;
-  background: url("../img/pattern-header.jpg");
-  background-position: 0 0;
-  background-repeat: repeat-x;
-  border-bottom: 1px solid #000000; }
-  @media (max-width: 1080px) {
-    .page-header {
-      background-repeat: repeat; } }
+  background: #000000; }
 
 .container {
   max-width: 1920px;
@@ -134,28 +132,22 @@ input[name="toggle"] {
 
 .navigation__contact a {
   font-family: "Minion-Pro", "Times", serif;
-  font-size: clamp(38px, 2.9vw, 56px);
+  font-size: 54px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none; }
-  @media (max-width: 1280px) {
+  @media (max-width: 580px) {
     .navigation__contact a {
-      font-size: 39px; } }
-  @media (max-width: 480px) {
-    .navigation__contact a {
-      font-size: 34px; } }
+      font-size: clamp(34px, 8vw, 50px); } }
 
 .navigation__contact a:nth-child(2) {
   display: block;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-size: clamp(25px, 1.8vw, 36px);
+  font-size: 36px;
   font-variant: small-caps; }
-  @media (max-width: 1280px) {
+  @media (max-width: 580px) {
     .navigation__contact a:nth-child(2) {
-      font-size: 25px; } }
-  @media (max-width: 480px) {
-    .navigation__contact a:nth-child(2) {
-      font-size: 23px; } }
+      font-size: clamp(23px, 5.5vw, 32px); } }
 
 .logo {
   max-width: 481px; }
